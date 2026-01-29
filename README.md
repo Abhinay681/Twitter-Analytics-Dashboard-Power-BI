@@ -1,12 +1,14 @@
-Power BI Twitter Analytics Project (Single Dashboard Version)
-Overview
+# Power BI Twitter Analytics Project (Single Dashboard Version)
 
-This version of the Twitter Analytics project presents 6 analytical tasks documented separately and all dashboards combined into a single Power BI (.pbix) file. The project focuses on applying strict business rules, advanced DAX calculations, time-based visibility control, and analytical validation using Power BI.
+## Overview
 
-The solution demonstrates real-world analytics scenarios where visuals may partially render or remain blank due to data constraints, ensuring analytical correctness over forced results.
+This version of the Twitter Analytics project presents 6 analytical tasks documented separately and all dashboards combined into a single Power BI (.pbix) file. The project demonstrates structured analysis, correct visual selection, and business-focused insights using Power BI.
 
-Project Structure
-Twitter-Analytics-Power-BI/
+---
+
+## Project Structure
+
+Twitter-Analytics-Dashboard/
 │
 ├── Task 1.docx
 ├── Task 2.docx
@@ -19,112 +21,70 @@ Twitter-Analytics-Power-BI/
 │
 └── README.md
 
-Tools Used
+---
 
-Power BI (DAX, data modeling, visuals)
+## Tools Used
 
-Excel / CSV (data preparation)
+* Power BI (DAX, visuals, data modeling)
+* Excel / CSV (data preparation)
 
-Time intelligence & text preprocessing
+---
 
-Task Summary & Files
-Task 1: Media Views vs Media Engagements
+## Task Summary & Files
 
-Visual Used: Scatter Chart
+### Task 1: Media Views vs Media Engagements
 
-Objective: Analyze the relationship between media views and media engagements for tweets meeting strict reply, time, date, engagement rate, and word count conditions.
+* Visual Used: Scatter Plot
+* Insight: Analyzes the relationship between media views and media engagements.
+* Files:
+  * Task 1 Explanation (Task 1.docx)
 
-Key Observation: No data points appear due to dataset limitations after applying all constraints.
+### Task 2: Click Interaction Breakdown by Tweet Category
 
-Files:
+* Visual Used: Clustered Bar Chart
+* Insight: Compares URL clicks, profile clicks, and hashtag clicks across tweet categories.
+* Files:
+  * Task 2 Explanation (Task 2.docx)
 
-Task 1 Explanation
+### Task 3: Top Tweets by Likes and Retweets
 
-Task 2: Click Interaction Breakdown by Tweet Category
+* Visual Used: Clustered Bar Chart
+* Insight: Identifies top-performing tweets based on total likes and retweets.
+* Files:
+  * Task 3 Explanation (Task 3.docx)
 
-Visual Used: Clustered Bar Chart
+### Task 4: Monthly Engagement Rate Trend
 
-Objective: Compare URL clicks, profile clicks, and hashtag clicks across tweet categories under specific time, date, and word count conditions.
+* Visual Used: Line Chart
+* Insight: Shows engagement rate trends over time for tweets with and without media.
+* Files:
+  * Task 4 Explanation (Task 4.docx)
 
-Key Observation: Visualization becomes blank when all conditions are enforced, confirming correct DAX logic.
+### Task 5: Engagement Comparison Above Median Media Engagement
 
-Files:
+* Visual Used: Clustered Column Chart
+* Insight: Compares replies, retweets, and likes for tweets with higher media engagement.
+* Files:
+  * Task 5 Explanation (Task 5.docx)
 
-Task 2 Explanation
+### Task 6: Engagement Rate Comparison (App Opens vs No App Opens)
 
-Task 3: Top Tweets by Likes and Retweets
+* Visual Used: Clustered Column Chart
+* Insight: Compares engagement rates for tweets with app opens versus without app opens.
+* Files:
+  * Task 6 Explanation (Task 6.docx)
 
-Visual Used: Clustered Bar Chart
+---
 
-Objective: Identify top tweets based on combined likes and retweets while excluding weekends and enforcing multiple parity rules.
+## Power BI Dashboard
 
-Key Observation: Fewer than 10 records qualify, reflecting dataset constraints rather than modeling errors.
+* Single Dashboard File:
+  * twitter.pbix
+* Contains all visuals corresponding to Tasks 1–6
 
-Files:
+---
 
-Task 3 Explanation
-
-Task 4: Monthly Engagement Rate Trend (Media vs Non-Media)
-
-Visual Used: Line Chart
-
-Objective: Compare monthly average engagement trends for tweets with and without media under strict content, time, and engagement rules.
-
-Key Observation: Missing months indicate periods with no qualifying data, validating correct filter implementation.
-
-Files:
-
-Task 4 Explanation
-
-Task 5: Engagement Comparison Above Median Media Engagement
-
-Visual Used: Clustered Column Chart
-
-Objective: Compare replies, retweets, and likes for tweets exceeding median media engagement within a specific date range and time window.
-
-Key Observation: No qualifying tweets meet all constraints simultaneously, resulting in a blank visual.
-
-Files:
-
-Task 5 Explanation
-
-Task 6: Engagement Rate – App Opens vs No App Opens
-
-Visual Used: Clustered Column Chart
-
-Objective: Compare engagement rates for tweets with app opens versus without app opens under weekday, time, parity, and text conditions.
-
-Key Observation: Only one bar appears due to the absence of qualifying tweets with app opens.
-
-Files:
-
-Task 6 Explanation
-
-Power BI Dashboard
-
-Single Dashboard File:
-
-Complete Power BI Dashboard
-
-Contains all visuals corresponding to Tasks 1–6
-
-Visuals dynamically appear or hide based on defined IST time windows and business rules
-
-Key Analytical Highlights
-
-Advanced DAX feature engineering
-
-Time-based visual visibility control
-
-Text preprocessing and character validation
-
-Odd/even parity checks on dates and metrics
-
-Median-based analytical filtering
-
-Honest handling of real-world data limitations
-
-Author
+## Author
 
 Abhinay P
 Domain: Data Analyst
