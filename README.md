@@ -9,17 +9,17 @@ This version of the Twitter Analytics project presents 6 analytical tasks docume
 ## Project Structure
 
 Twitter-Analytics-Dashboard/
-│
-├── Task 1.docx
-├── Task 2.docx
-├── Task 3.docx
-├── Task 4.docx
-├── Task 5.docx
-├── Task 6.docx
-│
-├── twitter.pbix   (All task dashboards in one file)
-│
-└── README.md
+
+ Task 1.docx
+ Task 2.docx
+ Task 3.docx
+ Task 4.docx
+ Task 5.docx
+ Task 6.docx
+
+ twitter.pbix   (All task dashboards in one file)
+
+ README.md
 
 ---
 
